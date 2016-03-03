@@ -6,6 +6,18 @@
     margin-right: 2px
 }
 
+
+#area1{
+  background-color: #290816;
+}
+
+#area2{
+  background-color: #FF0022;
+}
+
+#area3{
+  background-color: #290816;
+}
 /*.navbar-default{
 	background-color: teal
 }

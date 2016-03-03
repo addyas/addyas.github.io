@@ -35,14 +35,17 @@ var barPadding = 1;
 
 
 //start comment
-           var width = $(window).width(),
+           //var width = $(window).width(),
+           //var width = window.innerWidth - 17 ,
+           //var width =  $(document).width() - 17,
+           var width = 1200,
     height = 200,
     n = 100,
     period = 2000;
 var svg = d3.select("#area1").append("svg")
     .attr("width", width)
     .attr("height", height)
-    //.attr("viewbox", "0 0 1350 200")
+    .attr("viewbox", "0 0 1350 200")
     //.style("background", "#470A42");
     //.style("background", "#19452E");
     .style("display", "block")
@@ -58,7 +61,8 @@ var flakes = svg.selectAll("ellipse")
   //.style("fill", "#470A42")
     //.style("fill", "#5E0414")
     //.style("fill","#3B191F")//main one
-    .style("fill","#021D21")
+    //.style("fill","#021D21")//nice teal, too dark
+    .style("fill", "#09D68E")
     .attr("dy", ".35em")
     .attr("text-anchor", "middle")
     .text(function() { return ("'''").charAt(Math.random() * 3); })
@@ -362,7 +366,7 @@ var svg3 = d3.select("#area3").append("svg")
   //.style("fill", "#470A42")
     //.style("fill", "#5E0414")
     //.style("fill","#3B191F")//main one
-    .style("fill","#021D21")
+    .style("fill","#09D68E")
     .attr("dy", ".35em")
     .attr("text-anchor", "middle")
     .text(function() { return ("'''").charAt(Math.random() * 3); })
