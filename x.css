@@ -1,33 +1,5 @@
-.bar{
-    display: inline-block;
-    width: 20px;
-    height: 75px;   /* We'll override this later */
-    background-color: teal;
-    margin-right: 2px
-}
 
 
-#area1{
-  background-color: #290816;
-}
-
-#area2{
-  background-color: #FF0022;
-}
-
-#area3{
-  background-color: #290816;
-}
-/*.navbar-default{
-	background-color: teal
-}
-ul li{
-	padding-right: 27px;
-}*/
-
-/*ul {
-    margin: 40px;
-}*/
 
 .nopadding{
 
@@ -85,7 +57,8 @@ ul li:hover {
 }
 
 .navbar-custom {
-	background-color:#290816;
+	background-color:#000;
+  opacity: 0.7;
     color:#ffffff;
   	border-radius:0;
   	margin-bottom: 0;
@@ -115,7 +88,7 @@ ul li:hover {
       
 .navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
     
-     color: #5C8A71;
+     color: #656117;
 	background-color:transparent;
     /*background-color: #000;*/
 }
@@ -171,6 +144,70 @@ a{
 	font-size: 1.17em;
 }
 
+h1{
+  font-family: 'Open Sans Condensed', sans-serif;
+  display: inline-block;
+  line-height: 175%;
+  vertical-align: middle;
+  
+}
+
+p{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+html,body{
+  height: 100%;
+}
+
+
+html{
+  position: relative;
+  min-height: 100%;
+}
+
 body{
-	background-color: 290816;
+	/*background-color: #121212;*/
+  background: url("background.png");
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.highlighter{
+   /*color: #130838; */
+   color: #669999;
+}
+
+.centerdivs {
+    margin: auto;
+    width: 60%;
+    padding-left:40px;
+    padding-top: 30px;
+
+}
+
+.centered {
+  position: absolute;
+  /*top: 50%;*/
+  left: 54.5%;
+  /* bring your own prefixes */
+  transform: translate(-54.5%, 0%);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #000;
+  
+}
+
+.footer p{
+  text-align: right;
+  margin-right: 20px;
+  top:50%;
+  
+  transform: translate(0%, 50%);
 }
