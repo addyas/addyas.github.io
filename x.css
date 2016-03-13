@@ -161,21 +161,16 @@ html,body{
 }
 
 
-html{
-  position: relative;
-  min-height: 100%;
-}
-
 body{
 	/*background-color: #121212;*/
   background: url("background.png");
-  margin-bottom: 60px;
+  
   /*overflow: hidden;*/
 }
 
 .highlighter{
    /*color: #130838; */
-   color: #669999;
+   color: #222e38;
 }
 
 .centerdivs {
@@ -194,13 +189,6 @@ body{
   transform: translate(-50%, 0%);
 }
 
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by it's height */
-  margin: 0 auto -60px;
-}
 
 .footer {
   position: absolute;
@@ -218,4 +206,10 @@ body{
   top:50%;
   
   transform: translate(0%, 50%);
+}
+
+.customFooter{
+
+  text-align: right;
+  background-color: #000;
 }
