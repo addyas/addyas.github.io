@@ -169,7 +169,7 @@ html{
 body{
 	/*background-color: #121212;*/
   background: url("background.png");
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   /*overflow: hidden;*/
 }
 
@@ -199,7 +199,7 @@ body{
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 40px;
+  height: 60px;
   background-color: #000;
   
 }
