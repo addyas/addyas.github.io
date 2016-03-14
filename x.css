@@ -164,8 +164,13 @@ html,body{
 body{
 	/*background-color: #121212;*/
   background: url("background.png");
-  
-  /*overflow: hidden;*/
+   overflow: auto;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width)  {
+    body {
+        background-position: center center;
+    }
 }
 
 .highlighter{
@@ -212,4 +217,10 @@ body{
 
   text-align: right;
   background-color: #000;
+}
+
+.customFooter p{
+top:30%;
+  
+  transform: translate(0%, 30%);
 }
