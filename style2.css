@@ -62,10 +62,10 @@
     font-style: normal;
   }
 
-  p.hister_font{
+  .hipster_font{
         font-family: "Abel";
-    font-size: 32px;
-    line-height: 1.2em;
+    font-size: 26px;
+    line-height: 1.25em;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 400;
@@ -95,7 +95,7 @@
   }
 
   ul{
-    list-style-type: circle;
+    list-style-type: lower-greek;
     text-transform: lowercase;
   }
 
@@ -140,11 +140,18 @@
 
   }
 
-   .about{
-     color: #3B6129;
+   .aboutme{
+     /*color: #3B6129;*/
+     color: #3A4529;
      position: absolute;
-     left: 26%;
+     width: 100%;
+     text-align: center;
      padding-top: 10px;
+
+   }
+
+   .aboutme ul {
+     display: inline-block;
 
    }
 
@@ -265,16 +272,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endCol
   color: #121212;
 }
 
-.about{
-position: absolute;
 
-
-}
-
-.bottom{
+.bottom.left{
   position: absolute;
   top: 80%;
-  left: 87%;
+  left: 80%;
+}
+
+.bottom.right{
+  position:absolute;
+  width: 100%;
+  top: 40%;
+  text-align: center;
 }
 
 .centered{
@@ -283,9 +292,13 @@ position: absolute;
   margin-top: 25px;
 }
 
-#contact_me_for{
+h2{
   text-align:center;
-  display: block;
+  padding: 10px;
   margin-bottom:10px;
 }
 
+.nav-right-custom > li > a:hover{
+  color: #182C33;
+  background-color: transparent;
+}

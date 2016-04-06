@@ -8,30 +8,27 @@ $(document).ready(function(){
 	 // does smooth page scrolling
         $('#begin').on('click', function() {
             var $nextSection = $(this).closest('.section').next();
-            $('html,body').animate({scrollTop: $nextSection.offset().top }, 600);
+            $('html,body').animate({scrollTop: $nextSection.offset().top }, 500);
         });
 
-	$('#myb').bind('click',function(event){
-		var $anchor = $(this);
-		/*
-		if you want to use one of the easing effects:
-		$('html, body').stop().animate({
-			scrollLeft: $($anchor.attr('href')).offset().left
-		}, 1500,'easeInOutExpo');
-		 */
-		$('html, body').stop().animate({
-			scrollLeft: $($anchor.attr('href')).offset().left
-		}, 1000);
-		event.preventDefault();
-	});
+        /*$('a').on('click', function() {
+        	var $nextSection = document.getElementById("portfolio");
+        	/*console.log($($nextSection).offset());*/
+            /*$('html,body').animate({scrollTop: $($nextSection).offset().top}, 500);*//*
+            $('html,body').animate({scrollTop: $($(this).attr('href')).offset().top}, 500);
+        });*/
 
-	$(function(){
-      $("#contact_me_for").typed({
-        strings: ["to collaborate.", "to experiment." ,"to make something fresh."],
-        typeSpeed: 0
-      });
-  });
+      
+        
+       $('a.nav_link').click(function(){
+         $('html, body').animate({
+          		scrollTop: $( $.attr(this, 'href') ).offset().top
+           }, 500);
+         return false;
+       });
 
+
+	
 
 	console.log($( ".blurb" ).offsetParent());
 
