@@ -1,6 +1,7 @@
 
 
-/*@media only screen and (min-width: 768px) {*/
+
+@media only screen and (min-width: 768px) {
 
 
 @font-face {
@@ -301,4 +302,6 @@ h2{
 .nav-right-custom > li > a:hover{
   color: #182C33;
   background-color: transparent;
+}
+
 }

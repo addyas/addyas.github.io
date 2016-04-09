@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+	if(window.matchMedia( "(max-width: 768px)" )){
+      alert("You're on a mobile device! This site is not yet responsive, please try again on desktop!");
+
+	}
+
 	$("#bot").click(function(){
 
 		$(this).css("background-color", "red");
