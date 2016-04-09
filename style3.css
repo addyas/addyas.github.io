@@ -1,0 +1,238 @@
+
+
+@media only screen and (min-width: 768px) {
+
+
+@font-face {
+  font-family: "GT-Haptik";
+  src: url(GT-Haptik-Trial-Regular.otf) format("opentype");
+}
+	
+
+  html,body{
+    height: 100%;
+
+  }
+
+  body{
+  	/*background-color: #121212;*/
+    background: url("mood.jpg") no-repeat center center fixed;
+    background-size: cover;
+    
+   }
+  h1{
+    /*color: #AD3B02;
+    color: #241d12;*/
+    color: #281514;
+    margin: 10% auto 0% auto;
+    max-width: 35%;
+    text-align: center;
+    display: block;
+
+    text-transform: lowercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .75);
+    /*text-shadow: 2px 1px 4px rgba(135, 99, 61, 1);*/
+
+    font-family: "GT-Haptik";
+  }
+
+  p{
+    font-family: "GT-Haptik";
+    font-size: 1.4em;
+  }
+
+
+  .haptik_font{
+    font-family: "GT-Haptik";
+     font-size: 22px;
+    line-height: 1.75em;
+    letter-spacing: .7px;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+
+
+  .code_font{
+
+    font-family: "Source Code Pro";
+    font-size: 22px;
+    line-height: 1.75em;
+    letter-spacing: .7px;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .hipster_font{
+        font-family: "Abel";
+    font-size: 26px;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+
+  ul{
+    list-style-type: lower-greek;
+    text-transform: lowercase;
+  }
+
+.blurb{
+
+  
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%); 
+  margin-left: 5px;
+  margin-right: 5px;
+  text-transform: lowercase;
+}
+
+
+  /*.section0{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url("one.png");
+    
+    background-size: cover;
+    background-position: bottom left;
+    text-align: center;
+
+  }
+
+  .section1{
+    height: 70vh;
+    background-color: #000;
+    color: #757575;
+    position: relative;
+
+  }
+   .section2{
+    height: 90vh;
+    background-color: #080A05;
+    transition: background-color 0.5s linear;
+    position: relative;
+
+  }*/
+
+  
+
+
+   /*.section4{
+    height: 30vh;
+    /*background-color: #070A01;
+    background-color: #000;
+    position: relative;
+  }*/
+
+  /*.section3{
+    height: 80vh;
+    background-color: #05070A;
+    color: #182C33;
+  }
+
+  .above_sec1{
+    background-color: #000;
+  }*/
+
+
+  .btn-custom{
+  
+    border-radius: 0px;
+    border-width: 1px;
+    border-color: #241d12;
+    padding:6px 5%; /*was 3px 2% */
+    margin-top: 25px; /*was 6*/
+    -webkit-box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.75);
+
+  }
+
+  .btn-custom:hover{
+  
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url("one.png");
+    
+    background-position: 0% 75%;
+    text-align: center;
+  background-size: cover;
+
+
+
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+
+  }
+
+  a{ 
+    color: #000;
+    text-transform: uppercase;
+  }
+
+  a.btn-custom{ 
+    color: #241d12;
+    text-transform: uppercase;
+  }
+
+  .btn:hover{ color: #000; }
+
+
+.navbar-cool{
+   	/*background-color: #692001;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#121212+1,382209+100 */
+background: #121212; /* Old browsers */
+background: -moz-linear-gradient( top left,  #121212 1%, #121212 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top left,  #121212 1%,#121212 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom right,  #121212 1%,#121212 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#000',GradientType=1 ); /* IE6-9 */
+
+}
+
+.navbar-static-top{
+  padding-bottom:5px;
+  padding-top:5px ;
+
+}
+
+.navbar-cool ul >li {
+   	color: #000;
+
+}
+
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 25%;
+}
+
+.navbar-cool .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #BFBFBF;
+	background-color: black;
+}
+
+.nav-brand-custom{
+  padding-left: 0px;
+  
+}
+
+.nav-right-custom{
+  padding-right: 15px;
+  
+}
+
+
+
+
+.nav-right-custom > li > a:hover{
+  color: #182C33;
+  background-color: transparent;
+}
