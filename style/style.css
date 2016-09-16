@@ -1,0 +1,36 @@
+body{
+  background-color: #FFF3E0;
+  color: #212121;
+}
+.top-bar, li{
+  background-color: #F57C00;
+  text-transform: lowercase;
+}
+
+a:link{
+  color: #FFFFFF;
+}
+
+a:visited{
+
+}
+
+a:hover{
+
+}
+
+a:active{
+
+}
+
+.welcome{
+  background-color: #FFB74D;
+  text-align: left;
+  padding: 1.5em;
+  margin: 1em 0em 1em 0em;
+}
+
+.description{
+  background-color: #FF9800;
+  padding: 1.5em;
+}
