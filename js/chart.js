@@ -16,8 +16,8 @@ google.charts.load("current", {packages:["corechart"]});
           height: "300",
           width: "400",
           chartArea: {left: 15, top: 0, width: '100%', height: '100%'},
-          legend: {alignment: 'center', textStyle: {color: "#757575", fontSize: "17", fontName: "Abel"}},
-          colors: ["#AD1457","#121212","#757575","#D84315"],
+          legend: {alignment: 'center',textStyle: {color: "#757575", fontSize: "17", fontName: "Abel"}},
+          colors: ["#757575","#121212","#D84315","#AD1457"],
           pieSliceBorderColor: "#757575",
           pieSliceText: "none",
           tooltip: {text: "percentage"}
