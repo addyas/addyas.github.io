@@ -27,3 +27,7 @@ google.charts.load("current", {packages:["corechart"]});
 
         chart.draw(data, options);
       }
+
+      $(window).resize(function(){
+         drawChart();
+      });
