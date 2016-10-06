@@ -13,9 +13,17 @@ body{
   background-image: linear-gradient(to right, #121212 0%, #AD1457 100%);
   color: #FFFFFF;
   font-family: 'Abel', sans-serif;
+  font-size: 16px;
 }
-h3, h4, h5{
+h3, h4, h5,p{
   font-family: 'Abel', sans-serif;
+}
+p{
+  font-size: 120%;
+  line-height: 1.2;
+}
+h1{
+  font-size: 250%;
 }
 .thumbnail{
   border-color: #121212;
@@ -55,12 +63,15 @@ a:active{
   padding:1.5em;
   margin: 1em 0em 1em 0em;
   min-height: 12em;
+  width: 100%;
 }
 
 .description{
   background-color: rgba(0,0,0,0.25);
   padding: 1.5em;
   margin: 0.5em 0em 0.5em 0em;
+  min-height: 15em;
+  width: 100%;
 }
 
 code {
@@ -82,6 +93,7 @@ code {
   -webkit-box-shadow: 1px 4px 4px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 4px 4px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 4px 4px 0px rgba(0,0,0,0.75);
+  width: 40%;
 }
 
 .button:hover{
@@ -174,31 +186,5 @@ box-shadow: 0px 0px 7px 0px rgba(255,255,255,1);
 	left: 94%;
 	animation-name: falling;
 	animation-duration: 10s;
-
-}
-
-@media screen
-  and (device-width: 360px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3) {
-    h3{
-      font-size: 2.5em;
-    }
-    h4{
-      font-size: 2.2em;
-    }
-    h5{
-      font-size: 2em;
-    }
-    h6, li{
-       font-size: 1.7em;
-    }
-    p{
-       font-size: 1.5em;
-    }
-    .button{
-      width: 40%;
-      margin: auto;
-    }
 
 }
