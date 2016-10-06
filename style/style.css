@@ -1,10 +1,32 @@
 body{
-  background-color: #FFF3E0;
-  color: #212121;
+  /* IE10+ */
+  background-image: -ms-linear-gradient(left, #121212 0%, #AD1457 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(left, #121212 0%, #AD1457 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(left, #121212 0%, #AD1457 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #121212), color-stop(100, #AD1457));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(left, #121212 0%, #AD1457 100%);
+  /* W3C Markup */
+  background-image: linear-gradient(to right, #121212 0%, #AD1457 100%);
+  color: #FFFFFF;
+  font-family: 'Abel', sans-serif;
 }
-.top-bar, li{
-  background-color: #F57C00;
+h3, h4, h5{
+  font-family: 'Abel', sans-serif;
+}
+.thumbnail{
+  border-color: #121212;
+}
+.top-bar, .top-bar ul{
+  background-color: #121212;
   text-transform: lowercase;
+}
+
+.menu>li>a{
+  color: #FFFFFF;
 }
 
 a:link{
@@ -23,14 +45,134 @@ a:active{
 
 }
 
+.accent{
+  color: #FFB74D;
+}
+
 .welcome{
-  background-color: #FFB74D;
-  text-align: left;
-  padding: 1.5em;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  padding:1.5em;
   margin: 1em 0em 1em 0em;
+  min-height: 12em;
 }
 
 .description{
-  background-color: #FF9800;
+  background-color: rgba(0,0,0,0.25);
   padding: 1.5em;
+  margin: 0.5em 0em 0.5em 0em;
+}
+
+code {
+  background-color: rgba(0,0,0,0.2);
+  color: #757575;
+  border: 2px solid rgba(0,0,0,0.4);
+}
+
+.ib{
+  display: inline-block;
+  margin-left: 2em;
+  margin-right: 2em;
+  color: #757575;
+}
+
+.button{
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 4px 4px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 4px 4px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 4px 4px 0px rgba(0,0,0,0.75);
+}
+
+.button:hover{
+  background-color: rgba(173,20,87, 0.1);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.left-aligned-ul{
+  text-align: left;
+}
+
+.resume{
+  color: #757575;
+}
+
+.emphasis{
+  color: #D84315;
+}
+
+hr{
+  border-top: 1px solid #757575;
+  border-bottom: 1px solid #757575;
+}
+
+@keyframes falling{
+	10% {visibility: visible;}
+	25%{visibility: visible; top: 60% left: 70%;}
+	50%{visibility: visible; top: 20%; left: 20%;}
+	55%{visibility: visible; top: 24%; left: 24%;}
+	100%{ visibility: visible; top: -15%; left: -15%;}
+}
+.star{
+	width: 7px;
+	height: 7px;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.9);
+	position: absolute;
+
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(255,255,255,1);
+-moz-box-shadow: 5px 5px 5px 0px rgba(255,255,255,1);
+box-shadow: 0px 0px 7px 0px rgba(255,255,255,1);
+
+  visibility: hidden;
+}
+
+.star1{
+	height: 6px;
+    width: 6px;
+	top:79%;
+	left: 88.5%;
+	animation-name: falling;
+	animation-duration: 5s;
+}
+
+.star2{
+    height: 3px;
+    width: 3px;
+	top:82%;
+	left: 94%;
+	animation-name: falling;
+	animation-duration: 7s;
+
+}
+
+.star3{
+
+	top:83.5%;
+	left: 98%;
+	animation-name: falling;
+	animation-duration: 9s;
+
+}
+
+.star4{
+    height: 4px;
+    width: 4px;
+	top:83%;
+	left: 90%;
+	animation-name: falling;
+	animation-duration: 8s;
+
+}
+
+.star5{
+    height: 2px;
+    width: 2px;
+	top:77%;
+	left: 94%;
+	animation-name: falling;
+	animation-duration: 10s;
+
 }
