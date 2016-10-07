@@ -2,71 +2,91 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Droid+Sans" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css">-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./style/style.css">
-    
+
     <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="js/chart.js"></script>
   </head>
   <body>
     <div data-sticky-container>
-      <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+      <div class="title-bar" data-responsive-toggle="top-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">A.DYAS</div>
+    </div>
+      <div class="top-bar" id="top-menu" data-sticky data-options="marginTop:0;" style="width:100%; margin-bottom: 5px;">
         <div class="top-bar-left">
           <ul class="menu">
             <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-        <div class="top-bar-right"><div class="top-bar-title">adyas</div></div>
+        <div class="top-bar-right"><div class="top-bar-title"><img src="ef.png" alt="logo" style="height: 30px;"></div></div>
       </div>
     </div><!--sticky-->
 
     <section>
-      <div class="row">
-        <div class="small-12 large-5 columns">
-          <div class="welcome">
-            <img class=" thumbnail float-right" src="myAvatar.png" style="height: 10em;">
-            <h2 style="color: #757575;">Designer, Developer</h2>
-            <h4>Creative problem solver, user-centered designer, coder.</h4>
-            <h5 style="color: #757575;">I enjoy creating <span class="emphasis">aesthetic, easy to use, data-driven</span> designs.</h5>
-            <p style="color: #757575;">Please have a look around, and feel free to contact me with any questions, concerns, or dinner recommendations. Thanks in advance.</p>
+      <div class="row collapse">
+        <div class="column align-self-middle">
+          <div class="description">
+            <div id="donutchart"></div>
             <h6 class="emphasis">&#59 tldr</h6>
             <code>
               &lt;designer id="dyas">...&lt;/designer&gt;
             </code>
           </div>
         </div>
-        <div class="small-12 large-7 columns">
-          <div class="description">
-            <div id="donutchart"></div>
-            </div>
+
+        <div class="column align-self-top">
+          <div class="welcome" style="text-align: left;">
+            <h3 style="color: #757575;">Designer, Developer</h3>
+            <h5>Creative problem solver, user-centered designer, developer.</h5><br>
+            <h6 style="color: #757575;">I enjoy creating <span class="emphasis">aesthetic, easy to use, data-driven</span> designs.</h6>
+            <p>Please have a look around, and feel free to contact me with any questions, concerns, or dinner recommendations. Thanks in advance.</p>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="small-12 large-5 columns">
-          <div class="description">
-            <div class="media-object stack-for-small">
+      <div class="row collapse">
+        <div class="column align-self-top tar">
+          <div class="welcome">
+            <div class="media-object">
               <div class="media-object-section">
                 <div class="thumbnail">
-                  <img style="height: 14em; width: auto;" src= "img/supersavr1.png">
+                  <img style="height: 15.5em; width: auto;" src= "img/supersavr1.png">
                 </div>
               </div>
               <div class="media-object-section">
-                <h4>SuperSavr</h4>
-                <p>UX Research &#8594 Rapid Prototyping  &#8594 Usability Testing  &#8594 Rapid Prototyping  &#8594 Development</p>
+                <h5>SuperSavr</h5>
+                <p>UX Research &#8594 Rapid Prototyping &#8594 Usability Testing &#8594 Rapid Prototyping &#8594 Development</p>
               </div>
              </div>
           </div>
+       </div>
+        <div class="column align-self-top tar">
+          <div class="description">
+          <div class="media-object stack-for-small">
+            <div class="media-object-section">
+              <div class="thumbnail">
+                <img style="width: 18em" src= "img/css_portfolio_pg1-1.png">
+              </div>
+            </div>
+            <div class="media-object-section">
+              <h5>Photographer's Portfolio</h5>
+              <p>Design and Development</p>
+            </div>
+           </div>
+           <div class="media-object stack-for-small">
+             <p>lej ajfeiljal faihf  afhhao ahfeiohoia aehio ajfislj ajfieojeaj afjeioafje jaiefoj jafieoj fa eijoj af</p>
+           </div>
+          </div>
         </div>
-        <div class="small-12 large-7 columns">
-          <div class="welcome">jfsljfliajls</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="small-12 large-3 columns">
+        <div class="column align-self-bottom tar">
           <div class="welcome resume">
             <img src="img/hat_icon.png" alt="diploma-icon" style="display: inline-block;">
             <hr>
@@ -77,26 +97,17 @@
             <h5><a role="button" class="button" href="https://docs.google.com/document/d/19o-S1FKsLC3mM4wZHA71BqjJswgwE592PUWbCI5Ojz4/edit?usp=sharing">Resume</a></h5>
           </div>
         </div>
-        <div class="small-12 large-9 columns">
-          <div class="description">
-          <div class="media-object stack-for-small">
-            <div class="media-object-section">
-              <div class="thumbnail">
-                <img style="height: 14em" src= "img/css_portfolio_pg1-1.png">
-              </div>
-            </div>
-            <div class="media-object-section">
-              <h4>Photographer's Portfolio</h4>
-              <p>Design and Development</p>
-            </div>
-           </div>
-          </div>
-        </div>
       </div>
-      <div class="row">
+      <div class="row collapse">
         <div class="small-12 large-8 columns">
+           <div class="welcome">jfsljfliajls</div>
+        </div>
+        <div class="small-12 large-4 columns">
           <div class="description" style="text-align: center;">
-            <h4>About Me</h4><h5 class="emphasis">experiences I enjoy</h5>
+            <h4>About Me</h4>
+
+              <img class=" thumbnail float-left" src="img/profile.jpg" style="height: 7em; border-radius: 1em; border: 2px outset rgba(244,244,255,0.15);">
+            <h5 class="emphasis">experiences I enjoy</h5>
             <ul class="ib">
               <li>martial arts</li>
               <li>writing</li>
@@ -118,13 +129,10 @@
               <li>video games</li>
             </ul>
           </div>
-        </div>
-        <div class="small-12 large-4 columns">
-          <div class="welcome"><h4>Contact</h4>
-
           </div>
         </div>
       </div>
+
     </section>
 
     <div class="frivWrapper">
@@ -135,12 +143,30 @@
       <div class="star star5"></div>
     </div>
 
-    <div data-sticky-container>
-      <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1" data-btm-anchor="content:bottom">
-        <div class="title-bar-left"><!-- Content --></div>
-        <div class="title-bar-right"><p>&copy A. Dyas 2016</p></div>
-      </div>
+  <footer class="footer">
+  <div class="row">
+    <div class="small-12 medium-6 large-5 columns">
+      <p class="logo"><img src="ef.png" style="height: 28px margin-right: 1em;" > <span style="color: #757575;">ADYAS</span></p>
+      <p class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </p>
+      <p class="copywrite">&copy A.Dyas 2016</p>
     </div>
+    <div class="small-12 medium-6 large-4 columns">
+
+    </div>
+    <div class="small-12 medium-12 large-3 columns">
+      <p class="about subheader">Design.</p>
+      <ul class="inline-list social">
+        <a href="#"><i class="fi-social-linkedin"></i></a>
+        <a href="#"><i class="fi-social-github"></i></a>
+      </ul>
+    </div>
+  </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
     <script>

@@ -17,7 +17,7 @@ $(document).ready(function(){
             height: "100%",
             width: "100%",
             chartArea: {left: 15, top: 0, width: '100%', height: '100%'},
-            legend: {alignment: 'center',textStyle: {color: "#757575", fontSize: "17", fontName: "Abel"}},
+            legend: {alignment: 'center',textStyle: {color: "#757575", fontSize: "17", fontName: "Alegreya Sans SC"}},
             colors: ["#757575","#121212","#D84315","#AD1457"],
             pieSliceBorderColor: "#757575",
             pieSliceText: "none",
