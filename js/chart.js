@@ -14,8 +14,7 @@ $(document).ready(function(){
           var psText = 'none';
           var colour = '#757575';
           if($(window).width()<400){
-            pos = 'top';
-            psText = 'label';
+            pos = 'bottom';
             colour = "#FFFFFF";
           }
 
