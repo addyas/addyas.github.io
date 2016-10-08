@@ -9,6 +9,16 @@ $(document).ready(function(){
             ['UX',  20],
             ['Visual Design', 15]
           ]);
+          //position legend differently for mobile
+          var pos = 'right';
+          var psText = 'none';
+          var colour = '#757575';
+          if($(window).width()<400){
+            pos = 'top';
+            psText = 'label';
+            colour = "#FFFFFF";
+          }
+
 
           var options = {
             title: 'What I do',
@@ -17,10 +27,10 @@ $(document).ready(function(){
             height: "100%",
             width: "100%",
             chartArea: {left: 15, top: 0, width: '100%', height: '100%'},
-            legend: {alignment: 'center',textStyle: {color: "#757575", fontSize: "17", fontName: "Alegreya Sans SC"}},
+            legend: {position: pos ,alignment: 'center',textStyle: {color: colour, fontSize: "17", fontName: "Alegreya Sans SC"}},
             colors: ["#757575","#121212","#D84315","#AD1457"],
             pieSliceBorderColor: "#757575",
-            pieSliceText: "none",
+            pieSliceText: psText,
             tooltip: {text: "percentage"}
           };
 
@@ -29,10 +39,10 @@ $(document).ready(function(){
           chart.draw(data, options);
         }
 
-        $(window).resize(function(){
+      /*  $(window).resize(function(){
            drawChart();
            console.log('chart should be redrawn');
-        });
+        });*/
 
 
 
