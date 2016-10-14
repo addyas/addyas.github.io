@@ -2,22 +2,29 @@ $(document).ready(function(){
   google.charts.load("current", {packages:["corechart"]});
         google.charts.setOnLoadCallback(drawChart);
         function drawChart() {
-          var data = google.visualization.arrayToDataTable([
-            ['Expertise', 'Percentage'],
-            ['Interaction Design',   35],
-            ['Development',      30],
-            ['UX',  20],
-            ['Visual Design', 15]
-          ]);
+
           //position legend differently for mobile
           var pos = 'right';
           var psText = 'none';
           var colour = '#757575';
+          var label1 = 'Interaction Design';
+          var label2 = 'Development';
+          var label3 = 'UX Design';
+          var label4 = 'Visual Design';
           if($(window).width()<400){
-            pos = 'bottom';
-            colour = "#FFFFFF";
+            label1 = 'IxD';
+            label2 = 'Dev';
+            label3 = 'UX';
+            label4 = 'UI';
           }
 
+          var data = google.visualization.arrayToDataTable([
+            ['Expertise', 'Percentage'],
+            [label1,   35],
+            [label2,      30],
+            [label3,  20],
+            [label4, 15]
+          ]);
 
           var options = {
             title: 'What I do',
@@ -35,16 +42,15 @@ $(document).ready(function(){
 
           var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
 
-          chart.draw(data, options);
+          if (window.matchMedia("(min-width: 400px)").matches) {
+                chart.draw(data, options);
+          }
+
         }
 
-      /*  $(window).resize(function(){
+        $(window).resize(function(){
            drawChart();
            console.log('chart should be redrawn');
-        });*/
-
-
-
-
+        });
 
 });

@@ -3,12 +3,13 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Droid+Sans" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css">-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.css" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
-
+    <!-- Insert this within your head tag and after foundation.css -->
     <link rel="stylesheet" href="./style/style.css">
 
     <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -17,27 +18,30 @@
   </head>
   <body>
     <div data-sticky-container>
-      <div class="title-bar" data-responsive-toggle="top-menu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle></button>
-      <div class="title-bar-title">A.DYAS</div>
-    </div>
-      <div class="top-bar" id="top-menu" data-sticky data-options="marginTop:0;" style="width:100%; margin-bottom: 5px;">
+      <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+        <div class="top-bar-title">
+          <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+            <button class="menu-icon light" type="button" data-toggle></button>
+          </span>
+        </div>
+        <img id="myLogo" src="ef.png" alt="logo" >
+      <div id="responsive-menu">
         <div class="top-bar-left">
-          <ul class="menu">
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li><button type="button" data-open="myPModal" style="margin-right: 1em;">Portfolio</button></li>
+            <li><button type="button" data-open="cModal" style="margin-right: 0.5em;">Contact</button></li>
           </ul>
         </div>
-        <div class="top-bar-right"><div class="top-bar-title"><img src="ef.png" alt="logo" style="height: 30px;"></div></div>
       </div>
-    </div><!--sticky-->
+     </div>
+   </div><!--sticky-->
 
     <section>
       <div class="row collapse">
         <div class="column small-12 large-expand align-self-middle">
-          <div class="description">
+          <div class="description" style="text-align: center;">
             <div id="donutchart"></div>
-            <h6 class="emphasis">&#59 tldr</h6>
+            <h5 class="emphasis">&#59 tldr</h5>
             <code>
               &lt;designer id="dyas">...&lt;/designer&gt;
             </code>
@@ -58,32 +62,32 @@
           <div class="welcome">
             <div class="media-object">
               <div class="media-object-section">
-                <div class="thumbnail">
+                <div class="thumbnail" data-open="superSavrModal">
                   <img style="height: 15.5em; width: auto;" src= "img/supersavr1.png">
                 </div>
               </div>
               <div class="media-object-section">
-                <h5>SuperSavr</h5>
+                <h5 class="h5links" data-open="superSavrModal">SuperSavr</h5>
                 <p>UX Research &#43 Rapid Prototyping &#43 Usability Testing &#43 Rapid Prototyping &#43 Development</p>
               </div>
              </div>
           </div>
        </div>
-        <div class="column small-12 medium-expand align-self-top tar">
+        <div class="column small-12 large-expand align-self-top tar">
           <div class="description">
           <div class="media-object stack-for-small">
             <div class="media-object-section">
-              <div class="thumbnail">
-                <img style="width: 18em" src= "img/css_portfolio_pg1-1.png">
+              <div class="thumbnail" data-open="ppModal">
+                <img style="width: 18em" src= "img/css_portfolio_pg1-2.png">
               </div>
             </div>
             <div class="media-object-section">
-              <h5>Photographer's Portfolio</h5>
+              <h5 class="h5links" data-open="ppModal">Photographer's Portfolio</h5>
               <p>Design &#43 Development</p>
             </div>
            </div>
            <div class="media-object stack-for-small">
-             <p>lej ajfeiljal faihf  afhhao ahfeiohoia aehio ajfislj ajfieojeaj afjeioafje jaiefoj jafieoj fa eijoj af</p>
+             <p>Muted, subdued mood captures the essence of a photographer's work. Built without a grid, au naturel. </p>
            </div>
           </div>
         </div>
@@ -101,7 +105,9 @@
       </div>
       <div class="row collapse">
         <div class="column small-12 medium-expand">
-           <div class="welcome">jfsljfliajls</div>
+           <div class="welcome"><h4>stroll</h4>
+           <img src="img/stroll.png" style="height:13.5em; width: auto;" alt="stroll screen shot">
+           </div>
         </div>
         <div class="small-12 large-5 columns">
           <div class="description" style="text-align: center;">
@@ -136,6 +142,100 @@
 
     </section>
 
+    <section id="modals">
+    <div class="large reveal myModalStyles" id="superSavrModal" data-reveal>
+      <h1>SuperSavr</h1><h6>Team Members: Ashley Dyas, Blair Li, Cody Li</h6>
+      <p class="lead">In UCSD&apos;s CSE 170, Interaction Design, my team was given a design brief around the topic of resolutions. We were interested in the ideas of thrift and saving as resolutions, and immediately dove into a process of needfinding, through ethnographic field study and contextual interviews. </p>
+      <div class="callout" style="float: right; background-color: rgba(0,0,0,0.7); ">
+        <img src="img/earlyprotos.png" style="height: 10em; width: auto; margin-bottom: 1em;">
+        <p>Pieces of an early stage prototype.</p>
+      </div>
+      <p>I observed and interviewed a variety of people doing an activity in attempt to track and/or save money, striving to document the successes and pain points of marginalized, extreme, and everyday users to ultimately achieve a more inclusive design. Taking cues from the processes, services, and applications my interviewees used comfortably, and seeing opportunities in the pain points and breakdowns I observed, we moved to the next step in our process.</p>
+      <p>Yielding considerably to our limited time and resources, my team decided to focus our efforts on users whose needs revolved around saving cash and efficiently tracking cash disuse. Our end goal would be to develop a simple, intuitive, efficient mobile web app for users to record cash savings and set spending goals.</p>
+
+      <p>Brainstorming, storyboarding, and paper prototyping comprised the next phase of our journey. Example personas include Mike, a tech-savvy 19 year old living on student loans, Marla, a 57 year old corporate manager wanting to retire, and who has limited comfort with new technologies, and Joseph, a 30 year old mechanic paid in cash, saving for a new car. People who all have their own reasons for dealing in cash, and their own motivations to save it. We wanted to save them the trouble of paper bookkeeping, to allow them to retain a level of independence from corporate banking, and to provide them a visual reminder of their savings goals. </p>
+      <div class="callout" style="float: left; background-color: rgba(0,0,0,0.7); ">
+        <img src="img/fieldtests.png" style="height: 10em; width: auto; margin-bottom: 1em;">
+        <p>Later user tests in the field.</p>
+      </div>
+      <p>Storyboards featured stickmen foregoing Starbucks and logging cash savings, sad baristas and fat wallets, with our app in the midst of it all.</p>
+      <div class="callout" style="float: right; background-color: rgba(0,0,0,0.7); ">
+        <img src="img/abtests.png" style="height: 10em; width: auto; margin-bottom: 1em;">
+        <p>An A/B test yeilding a surprising result.</p>
+      </div>
+      <p>I delivered a number of full paper prototypes, engaging in a cycle of prototyping, conducting user tests, and evaluating the prototypes against a scale grounded in Neilson&apos;s heuristics. </p>
+      <p>Soon it was time for development. Here my contribution was mostly HTML and CSS, letting Cody deal in his beloved JavaScript almost unperturbed. After development, racing against the clock, we ran more user tests and a pair of A/B tests on pages of critical functionality.</p>
+
+      <p>I learned a lot from this project. The cycle of prototyping was extremely helpful, and I realized my original design was solidly amiss. Some users found themselves confused as they tried to complete tasks assigned to them, others simply did not like the design. Unfortunately my phone was stolen since the project, so I don&apos;t have photos of most of the prototypes, but they did (usually) become progressively less bad. By the final prototype, most users we tested were able to navigate and complete tasks fairly quickly and without mistakes. Due to time constraints, we couldn&apos;t optimize styles for desktop, but on your mobile device, please visit <a href="http://supersavr.herokuapp.com">supersavr.herokuapp.com</a> for the final result. Thanks for reading!</p>
+      <div style="width: 60%; margin: auto;">
+      <div class="callout" style="display: inline-block; background-color: rgba(0,0,0,0.7); ">
+        <img src="img/supersavrad.png" style="height: 20em; width: auto; margin-bottom: 1em;">
+        <p>Styles I would've applied if we'd had more time.</p>
+      </div>
+      <div class="callout" style="display: inline-block; background-color: rgba(0,0,0,0.7); ">
+        <img src="img/supersavr1.png" style="height: 20em; width: auto; margin-bottom: 1em;">
+        <p>Our final product.</p>
+      </div>
+    </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="large reveal myModalStyles" id="ppModal" data-reveal>
+      <h1>Photographer's Portfolio</h1>
+      <div class="media-object">
+        <div class="media-object-section main-section">
+          <div class="thumbnail">
+            <img src="img/css_portfolio_pg1-2.png" style="height: 20em; width: auto;">
+          </div>
+        </div>
+        <div class="media-object-section" style="text-align: left;">
+         <p>This project was for me an exercise in visual design, and I became much better versed in CSS as I completed it.  I wanted to experiment with symmetry and asymmetry, and learn to use color sparingly. (The original version of the site you&apos;re on was bright purple.) </p>
+        </div>
+      </div>
+      <div class="media-object" style="margin: 2em auto;">
+        <div class="media-object-section ">
+          <p class="lead">Simple navigation, substantial negative space.</p>
+          <p>The site is functional, but not online. I&apos;d be glad to show it in person.</p>
+        </div>
+        <div class="media-object-section main-section" style="text-align: right;">
+          <div class="thumbnail">
+            <img src="img/css_portfolio_pg2.png" style="height: 20em; width: auto;">
+          </div>
+        </div>
+      </div>
+      <div class="media-object">
+        <div class="media-object-section main-section">
+          <div class="thumbnail">
+            <img src="img/css_portfolio_pg3.png" style="height: 20em; width: auto; text-align: left;">
+          </div>
+        </div>
+        <div class="media-object-section">
+         <p>I wasn&apos;t as satisfied with this page. I felt it didn&apos;t quite cohere to the style I was attempting. To correct this, next I would experiment with the blog&apos;s border, and possibly split the background image at some 3:7 ratio.</p>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="large reveal myModalStyles" id="myPModal" data-reveal>
+      <h1>Awesome. I Have It.</h1>
+      <p class="lead">Your couch.</p>
+      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="tiny reveal myModalStyles" style="text-align:right;" id="cModal" data-reveal>
+      <h6 style="margin:0.7em auto;">Ashley Dyas</h6>
+      <p class="emphasis">ashleydyas92&#64;gmail.com</p>
+      <p>Reach out! I look forward to hearing from you.</p>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </section>
+
     <div class="frivWrapper">
       <div class="star star1"></div>
       <div class="star star2"></div>
@@ -147,12 +247,10 @@
   <footer class="footer">
   <div class="row">
     <div class="small-12 medium-6 large-5 columns">
-      <p class="logo"><img src="ef.png" style="height: 28px margin-right: 1em;" > <span style="color: #757575;">ADYAS</span></p>
+      <p class="logo"><img src="ef.png" style="height: 28px margin-right: 1em;" > <span style="color: #757575;">adyas</span></p>
       <p class="footer-links">
-        <a href="#">Home</a>
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#" data-open="myPModal">Portfolio</a>
+        <a href="#" data-open="cModal">Contact</a>
       </p>
       <p class="copywrite">&copy A.Dyas 2016</p>
     </div>
@@ -160,7 +258,8 @@
 
     </div>
     <div class="small-12 medium-12 large-3 columns">
-      <p class="about subheader">Design.</p>
+      <p class="about subheader">Static build with Foundation's flex grid.</p>
+      <p class="about subheader">ashleydyas92&#64;gmail.com</p>
       <ul class="inline-list social">
         <a href="#"><i class="fi-social-linkedin"></i></a>
         <a href="#"><i class="fi-social-github"></i></a>
