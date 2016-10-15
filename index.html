@@ -18,13 +18,14 @@
   </head>
   <body>
     <div data-sticky-container>
-      <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+      <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%;">
         <div class="top-bar-title">
+          <img id="myLogo" src="ef.png" alt="logo" >
           <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
             <button class="menu-icon light" type="button" data-toggle></button>
           </span>
         </div>
-        <img id="myLogo" src="ef.png" alt="logo" >
+
       <div id="responsive-menu">
         <div class="top-bar-left">
           <ul class="dropdown menu" data-dropdown-menu>
@@ -183,31 +184,31 @@
     </div>
     <div class="large reveal myModalStyles" id="ppModal" data-reveal>
       <h1>Photographer's Portfolio</h1>
-      <div class="media-object">
+      <div class="media-object stack-for-small">
         <div class="media-object-section main-section">
           <div class="thumbnail">
-            <img src="img/css_portfolio_pg1-2.png" style="height: 20em; width: auto;">
+            <img class="ppImg" src="img/css_portfolio_pg1-2.png">
           </div>
         </div>
         <div class="media-object-section" style="text-align: left;">
          <p>This project was for me an exercise in visual design, and I became much better versed in CSS as I completed it.  I wanted to experiment with symmetry and asymmetry, and learn to use color sparingly. (The original version of the site you&apos;re on was bright purple.) </p>
         </div>
       </div>
-      <div class="media-object" style="margin: 2em auto;">
+      <div class="media-object stack-for-small" style="margin: 2em auto;">
         <div class="media-object-section ">
           <p class="lead">Simple navigation, substantial negative space.</p>
           <p>The site is functional, but not online. I&apos;d be glad to show it in person.</p>
         </div>
         <div class="media-object-section main-section" style="text-align: right;">
           <div class="thumbnail">
-            <img src="img/css_portfolio_pg2.png" style="height: 20em; width: auto;">
+            <img class="ppImg" src="img/css_portfolio_pg2.png">
           </div>
         </div>
       </div>
-      <div class="media-object">
+      <div class="media-object stack-for-small">
         <div class="media-object-section main-section">
           <div class="thumbnail">
-            <img src="img/css_portfolio_pg3.png" style="height: 20em; width: auto; text-align: left;">
+            <img class="ppImg" src="img/css_portfolio_pg3.png">
           </div>
         </div>
         <div class="media-object-section">
@@ -226,7 +227,7 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <div class="tiny reveal myModalStyles" style="text-align:right;" id="cModal" data-reveal>
+    <div class="tiny reveal myModalStyles" style="text-align:left;" id="cModal" data-reveal>
       <h6 style="margin:0.7em auto;">Ashley Dyas</h6>
       <p class="emphasis">ashleydyas92&#64;gmail.com</p>
       <p>Reach out! I look forward to hearing from you.</p>

@@ -311,8 +311,7 @@ ul>li>p>i, a>i{
 }
 
 #myLogo{
-  position: relative;
-  left: 6%;
+  margin: auto;
 }
 
 .myModalStyles p{
@@ -322,4 +321,18 @@ ul>li>p>i, a>i{
 .h5links:hover{
   color: #D84315;
   cursor: pointer;
+}
+
+.ppImg{
+  height:20em;
+  width: auto;
+}
+
+@media screen and (max-width: 400px) {
+    .ppImg{
+      height:20em;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+    }
 }
