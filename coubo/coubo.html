@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Droid+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css">-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <!-- Insert this within your head tag and after foundation.css -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/animate.css">
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <div class="expanded row">
+      <div class="small-12 medium-8 columns" style="padding-right: 0px; padding-left: 0px;">
+        <div class="main_sect">
+
+          <img id= "current_cover" src="selcouth.jpg"/>
+          <ul>
+            <li><a href="#">listen</a></li>
+            <li><a href="#">learn</a></li>
+            <li><a href="#">support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="small-12 medium-4 columns" style="padding-left: 0px; padding-right: 0px;">
+        <div class="right_sect">
+          <div class="row">
+            <div class="medium-12 columns">
+              <div class="boxes box1" >
+                <div class="animated hidden description">
+                  <h4>...</h4>
+                  <p>ajfilsjila jfsij afijjp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="medium-6 columns" style="padding-right: 0px;">
+              <div class="boxes box2">
+                <div class="animated hidden description">
+                  <h4>...</h4>
+                  <p>ajfilsjila jfsij afijjp</p>
+                </div>
+              </div>
+            </div>
+            <div class="medium-6 columns">
+              <div class="boxes box3" >
+                <div class="animated hidden description">
+                  <h4>...</h4>
+                  <p>ajfilsjila jfsij afijjp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="medium-12 columns">
+              <div class="boxes box4" >
+                <div class="animated hidden description">
+                  <h4>...</h4>
+                  <p>ajfilsjila jfsij afijjp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script>
+    $('.boxes').click(function(){
+      if($(this).hasClass("box3") || $(this).hasClass("box2")){
+        $(".description",this).addClass('slideInUp');
+      }
+      else{
+        $(".description",this).addClass('slideInRight');
+      }
+
+      $(".description",this).removeClass('hidden');
+    });
+  </script>
+</html>
