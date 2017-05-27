@@ -70,9 +70,9 @@ h1,h2{
 .row{margin:0px;}
 
 .sections{
-    height: 77vh;
+    height: 100vh;
     text-align: center;
-    padding: 20px;
+    padding: 100px;
 }
 
 .row3_right{
